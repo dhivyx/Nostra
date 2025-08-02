@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- Page link -->
+    <link rel="collection" href="index.html">
+
+    <!-- Tailwind CSS CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="/your-path-to-uicons/css/uicons-rounded-bold.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Offer screen -->
+    <nav id="offerscreen"
+        class="bg-gray-300 text-black flex justify-center gap-24 items-center transition-all duration-1000 opacity-100 translate-y-0">
+        <div class="flex gap-1 justify-center py-2">
+            <h2>Sign Up and </h2>
+            <h2 class="font-bold">GET 20% OFF </h2>
+            <h2>for your first Order</h2>
+        </div>
+        <div>
+            <svg id="xmark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 w-6 h-6 cursor-pointer transition-all duration-1000">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Navbar Section -->
+    <nav class="bg-white text-lg flex items-center justify-between p-4 sticky top-0 z-10">
+        <h1 class="text-3xl font-extrabold ">Nostra</h1>
+        <svg id="navbar" class="md:hidden " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+            stroke="currentColor" className="size-6" width="20" height="20">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="gap-8 hidden px-2 md:flex">
+            <li><a class="hover:underline black" href="index.html">Home</a></li>
+            <li><a class="hover:underline black" href="index.html">New Arrival</a></li>
+            <li><a class="hover:underline black" href="index.html">Most Wanted</a></li>
+            <li><a class="hover:underline black" href="collection.html">Collections</a></li>
+            <li><a class="hover:underline black" href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+
+    
+    <!-- Nav Bar slide -->
+    <div id="navbarslide" class="bg-gray-800 text-white md:text-xl py-6 fixed z-20 top-0 transition-all duration-1000" style="width:40%; height:100vh; right:-40%">
+        <p id="xbar" class="text-right px-5 cursor-pointer">X</p>
+        <ul class="flex flex-col gap-8 mx-5 px-2 my-7">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">New Arrival</a></li>
+            <li><a href="index.html">Most Wanted</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </div> 
+
+    <!-- Middle Section -->
+    <!--Filter Section -->
+
+    <div class="flex gap-3 md:gap-8 px-5">
+        <Section  id ="occasion" class="text-left  md:px-5" style="width:20%; height:90vh;">
+            <div class="text-xs md:text-2xl my-5 md:my-10">
+                <h1 class=" text-xl md:text-3xl font-bold my-3">Occasion</h1>
+                <input type="checkbox" value="Summer"> Summer<br>
+                <input type="checkbox" value="Party"> Party<br>
+                <input type="checkbox" value="Beach"> Beach<br>
+            </div>
+
+            <div class="text-xs md:text-2xl">
+                <h1 class=" text-xl md:text-3xl font-bold my-3">Colours</h1>
+                <input type="checkbox" value="Red"> Red<br>
+                <input type="checkbox" value="Blue"> Blue<br>
+                <input type="checkbox" value="Brown"> Brown<br>  <!-- Dont forget to give value to the checkboxes-->         
+                <input type="checkbox" value="Black"> Black<br>
+            </div>
+
+            <div class="text-xs md:text-2xl my-5 md:my-10">
+                <h1 class="text-xl md:text-3xl font-bold my-3">Arrivals</h1>
+                <input type="checkbox" value="Old"> Old<br>
+                <input type="checkbox" value="New"> New<br>
+            </div>
+        </Section>
+
+        <!-- Line Between -->
+        <div class="border-2 border-black">
+
+        </div>
+
+
+        <div class=" flex flex-col overflow-hidden mx-6 md:mx-16 my-5">
+            <!-- Search Bar -->
+            <div class="relative my-4">
+                <input id="search" class="border border-black rounded-xl py-2 px-2 w-11/12 md:w-4/5" type="text" placeholder="search">
+                <i id="searchicon" class="fi fi-br-search absolute right-10 md:right-48 top-2 cursor-pointer"></i>
+
+            </div>
+
+            <!-- Dress collection -->
+            <section id="container" class="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-14 py-3 md:py-7 overflow-hidden">
+                <div class="text-xs md:text-xl font-semibold ">
+                    <img src="./Collections/pic1.jpg" class="w-28 h-28 md:w-56 md:h-56">
+                    <h1 class="font-bold my-2">New Party Wear</h1>
+                    <p>₹200</p>
+                </div>
+
+                <div class="text-xs  md:text-xl font-semibold">
+                    <img src="./Collections/pic2.jpg" class="w-28 h-28 md:w-56 md:h-56">
+                    <h1 class="font-bold my-2">Beach Shirt</h1>
+                    <p>₹300</p>
+                </div>
+
+                <div class="text-xs md:text-xl font-semibold">
+                    <img src="./Collections/pic3.jpg" class="w-28 h-28 md:w-56 md:h-56">
+                    <h1 class="font-bold my-2">Floral Summer Shirt</h1>
+                    <p>₹150</p>
+                </div>
+
+                <div class="text-xs md:text-xl font-semibold">
+                    <img src="./Collections/pic4.jpg" class="w-28 h-28 md:w-56 md:h-56">
+                    <h1 class="font-bold my-2">Summer Denim</h1>
+                    <p>₹200</p>
+                </div>
+
+                <div class="text-xs  md:text-xl font-semibold">
+                    <img src="./Collections/pic5.jpg" class="w-28 h-28 md:w-56 md:h-56">
+                    <h1 class="font-bold my-2">Brown jerkin</h1>
+                    <p>₹150</p>
+                </div>
+
+                <div class="text-xs  md:text-xl font-semibold">
+                    <img src="./Collections/pic4.jpg" class="w-28 h-28 md:w-56 md:h-56">
+                    <h1 class="font-bold my-2">Denim Blue shirt</h1>
+                    <p>₹200</p>
+                </div>
+
+                <div class="text-xs  md:text-xl font-semibold">
+                    <img src="./Collections/pic2.jpg" class="w-28 h-28 md:w-56 md:h-56">
+                    <h1 class="font-bold my-2">Red Checked Shirt</h1>
+                    <p>₹300</p>
+                </div>
+
+                <div class="text-xs  md:text-xl font-semibold">
+                    <img src="./Collections/pic3.jpg" class="w-28 h-28 md:w-56 md:h-56">
+                    <h1 class="font-bold my-2">Black blazer</h1>
+                    <p>₹150</p>
+                </div>
+
+                <div class="text-xs  md:text-xl font-semibold">
+                    <img src="./Collections/pic1.jpg" class="w-28 h-28 md:w-56 md:h-56">
+                    <h1 class="font-bold my-2">Old Boycott</h1>
+                    <p>₹200</p>
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+
+
+
+    <!-- Subscribe -->
+    <nav class="px-5 flex flex-col items-center mt-8 md:mt-14">
+        <h1 class="font-bold text-xl md:text-4xl my-3 md:my-5">Join our News Letter</h1>
+        <p class="text-xs md:text-2xl">Signup for our email newspaper to get exclusive discounts, upadates and more</p>
+        <input type="text" class="border-2 border-black my-2 md:my-5 w-4/5 py-0 md:py-2">
+        <button
+            class="bg-black text-white font-semibold text-xs md:text-2xl md:px-4 px-2 md:py-3 py-1 my-2 md:my-5 rounded-xl flex place-items-center gap-1">Subscribe
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 w-3 md:w-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Footer -->
+    <nav class="mt-8 md:mt-14">
+        <div class="bg-gray-200 flex flex-col p-4 md:p-7">
+            <h1 class="font-bold text-xl md:text-4xl my-2 md:my-3">Nostra</h1>
+            <p class="text-xs md:text-2xl my-1 md:my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus, hic</p>
+            <div class="flex gap-10 my-1 md:my-3">
+                <i class="fi fi-brands-twitter-alt-circle"></i>
+                <i class="fi fi-brands-instagram"></i>
+                <i class="fi fi-brands-facebook"></i>
+            </div>
+            <p class="text-xs md:text-2xl my-1 pd:my-3">@2023 Nostra.com</p>
+        </div>
+    </nav>
+
+
+<script src="collection.js"></script>
+</body>
+
+</html>

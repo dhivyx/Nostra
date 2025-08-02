@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- Tailwind CSS CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+    <!-- Icons -->
+    <link href="/your-path-to-uicons/css/uicons-rounded-bold.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar Section -->
+    <nav class="bg-white text-lg flex items-center justify-between p-4 sticky top-0 z-10">
+        <h1 class="text-3xl font-extrabold ">Nostra</h1>
+        <svg id="navbar" class="md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            strokeWidth={1.5} stroke="currentColor" className="size-6" width="20" height="20">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="gap-8 hidden px-2 md:flex">
+            <li><a class="hover:underline black" href="index.html">Home</a></li>
+            <li><a class="hover:underline black" href="index.html">New Arrival</a></li>
+            <li><a class="hover:underline black" href="index.html">Most Wanted</a></li>
+            <li><a class="hover:underline black" href="collection.html">Collections</a></li>
+            <li><a class="hover:underline black" href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Nav Bar slide -->
+    <div id="navbarslide" class="bg-gray-800 text-white md:text-xl py-6 fixed z-20 top-0 transition-all duration-1000" style="width:40%; height:100vh; right:-40%">
+        <p id="xbar" class="text-right px-5 cursor-pointer">X</p>
+        <ul class="flex flex-col gap-8 mx-5 px-2 my-7">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">New Arrival</a></li>
+            <li><a href="index.html">Most Wanted</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </div>
+
+
+    <!-- Header Section -->
+
+    <section class="bg-gray-800  dark:bg-gray-900">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white dark:text-white">Contact Us
+            </h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical
+                issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.
+            </p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Your
+                        email</label>
+                    <input type="email" id="email"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="name@flowbite.com" required>
+                </div>
+                <div>
+                    <label for="subject"
+                        class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-white dark:text-gray-400">Your
+                        message</label>
+                    <textarea id="message" rows="6"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit"
+                    class="py-3 px-5 text-sm font-medium text-center text-gray-800  bg-yellow-200 rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+                    message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Subscribe -->
+    <nav class="px-5 flex flex-col items-center mt-8 md:mt-14">
+        <h1 class="font-bold text-xl md:text-4xl my-3 md:my-5">Join our News Letter</h1>
+        <p class="text-xs md:text-2xl">Signup for our email newspaper to get exclusive discounts, upadates and more</p>
+        <input type="text" class="border-2 border-black my-2 md:my-5 w-4/5 py-0 md:py-2">
+        <button
+            class="bg-black text-white font-semibold text-xs md:text-2xl md:px-4 px-2 md:py-3 py-1 my-2 md:my-5 rounded-xl flex place-items-center gap-1">Subscribe
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 w-3 md:w-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Footer -->
+    <nav class="mt-8 md:mt-14">
+        <div class="bg-gray-200 flex flex-col p-4 md:p-7">
+            <h1 class="font-bold text-xl md:text-4xl my-2 md:my-3">Nostra</h1>
+            <p class="text-xs md:text-2xl my-1 md:my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus, hic</p>
+            <div class="flex gap-10 my-1 md:my-3">
+                <i class="fi fi-brands-twitter-alt-circle"></i>
+                <i class="fi fi-brands-instagram"></i>
+                <i class="fi fi-brands-facebook"></i>
+            </div>
+            <p class="text-xs md:text-2xl my-1 pd:my-3">@2023 Nostra.com</p>
+        </div>
+    </nav>
+
+
+    <!--JS script -->
+    <script src="contact.js"></script>
+</body>
+
+</html>
