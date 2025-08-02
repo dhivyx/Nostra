@@ -19,4 +19,4 @@ Nostra is a modern and responsive e-commerce website built using **HTML**, **Tai
 - **Tailwind CSS**
 - **Vanilla JavaScript (ES6)**
 
-🚀 Live Demo Check out the live version of the project: Udemy Clone Demo (https://dhivyx.github.io/Udemy-clone/)
+🚀 Live Demo Check out the live version of the project: NOSTRA e-commerce website (https://dhivyx.github.io/Nostra/)
